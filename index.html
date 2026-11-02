@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Flexbox Documentation</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Flex_Container">Flex Container</a>
+      <a class="nav-link" href="#Flex_Items">Flex Items</a>
+      <a class="nav-link" href="#Alignment">Alignment</a>
+      <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+      <a class="nav-link" href="#Reference">Reference</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns.</p>
+        <p>Items flex to fill additional space or shrink to fit into smaller spaces.</p>
+        <p>This documentation explains the core concepts of the CSS Flexbox layout module.</p>
+        <code>display: flex;</code>
+        <code>display: inline-flex;</code>
+        <li>Understand the flex container and flex items.</li>
+        <li>Learn how alignment and distribution work.</li>
+      </section>
+      <section class="main-section" id="Flex_Container">
+        <header>Flex Container</header>
+        <p>The flex container is the parent element that holds flex items.</p>
+        <p>Setting <code>display: flex</code> on an element makes it a flex container.</p>
+        <p>Its direct children automatically become flex items.</p>
+        <code>flex-direction: row;</code>
+        <code>flex-wrap: wrap;</code>
+        <li>flex-direction controls the main axis direction.</li>
+        <li>flex-wrap controls whether items wrap to new lines.</li>
+      </section>
+      <section class="main-section" id="Flex_Items">
+        <header>Flex Items</header>
+        <p>Flex items are the direct children of a flex container.</p>
+        <p>Each item can grow or shrink along the main axis.</p>
+        <p>Use the flex shorthand to control item sizing behavior.</p>
+        <code>flex: 1;</code>
+        <code>flex-grow: 2;</code>
+        <li>flex-grow defines how much an item can grow.</li>
+        <li>flex-shrink defines how much an item can shrink.</li>
+      </section>
+      <section class="main-section" id="Alignment">
+        <header>Alignment</header>
+        <p>Flexbox provides powerful alignment properties.</p>
+        <p>justify-content aligns items along the main axis.</p>
+        <p>align-items aligns items along the cross axis.</p>
+        <code>justify-content: center;</code>
+        <code>align-items: center;</code>
+        <li>justify-content distributes space between items.</li>
+        <li>align-items aligns items vertically in a row.</li>
+      </section>
+      <section class="main-section" id="Responsive_Design">
+        <header>Responsive Design</header>
+        <p>Flexbox makes responsive layouts easier to build.</p>
+        <p>Combine flexbox with media queries for adaptive designs.</p>
+        <p>Items can reflow automatically as the viewport changes.</p>
+        <code>flex-direction: column;</code>
+        <code>flex-basis: 100%;</code>
+        <li>Use media queries to change layout at breakpoints.</li>
+        <li>Switch from row to column on small screens.</li>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>All properties referenced here follow the CSS Flexbox specification.</p>
+        <p>See the MDN documentation for the complete list of flex properties.</p>
+        <code>gap: 10px;</code>
+        <code>order: 1;</code>
+        <li>gap adds spacing between flex items.</li>
+        <li>order changes the visual order of items.</li>
+      </section>
+    </main>
+  </body>
+</html>
